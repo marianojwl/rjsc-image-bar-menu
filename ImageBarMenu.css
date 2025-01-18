@@ -1,0 +1,75 @@
+.ImageBarMenu {
+  width: 100%;
+  
+  /* Enable horizontal scrolling */
+  overflow-x: auto;
+  overflow-y: hidden;
+ /* scrollbar-width: thin;  For Firefox */
+/*     scrollbar-color: transparent transparent; For Firefox */
+
+  /* Hide the scrollbar for Webkit browsers (e.g., Chrome, Safari) */
+  &::-webkit-scrollbar {
+ /*   width: 0.5em;  Set scrollbar width */
+    height: 0.5rem;
+  }
+
+  &::-webkit-scrollbar-thumb {
+   background-color: rgb(152, 152, 152) /*  Set thumb color */
+  }
+}
+.ImageBarMenuContainer {
+
+}
+
+
+.ImageBarMenuMenu {
+  display: flex;
+  transition: transform 0.3s ease;
+  }
+
+.ImageBarMenuItem {
+  flex: 0 0 auto;
+  background-color: #fff;
+  border: 0px;
+  height: 150px;
+  min-width: 100px;
+  overflow: hidden;
+  display: flex;
+
+
+}
+.ImageBarMenuScrollButton {
+  
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px;
+  height: 150px;
+}
+.ImageBarMenuLeftScroll {
+  position: absolute;
+  z-index: 10;
+}
+.ImageBarMenuRightScroll {
+  float: right;
+  z-index: 10;
+
+}
+.navigators {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 50px;
+  
+}
+.ImageBarMenuAnchor {
+  display: contents;
+}
+.ImageBarMenuAnchor img {
+  max-width: 105px;
+}
+
+.ImageBarMenu .selected {
+  opacity: 1;
+}
+.ImageBarMenu .unselected {
+  opacity: 0.55;
+}
